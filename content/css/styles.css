@@ -1,0 +1,249 @@
+/*
+	STACKFA.IR
+	VERSION 1.0
+ */
+
+
+/*[FONTS]*/
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+@font-face {
+    font-family: 'irs';
+    src: url('../fonts/IRANSans-web.woff');
+    font-weight: normal;
+}
+
+
+/*[RTL]*/
+
+html {
+    font-family: 1em;
+}
+
+body {
+    direction: rtl;
+    font-family: 'irs', tahoma, sans-serif;
+    cursor:default;
+    background-color:#eee;
+}
+
+
+/*[00.var]*/
+
+.list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+/*[00.header]*/
+
+.header {
+    background-color: #3066be;
+    margin-bottom: 120px;
+}
+
+
+/*[00.nav-header]*/
+
+.nav-header {}
+
+.nav-header li {
+    height: 60px;
+    float: right;
+    position: relative;
+}
+
+.nav-header li:last-child:before,
+.nav-header li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 100;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.nav-header li:last-child:before {
+    left: 0;
+    right: auto;
+}
+
+.nav-header li a {
+    color: #acc2e5;
+    display: block;
+    line-height: 60px;
+    padding: 0 30px;
+    direction: ltr;
+}
+
+.nav-header li.active > a,
+.nav-header li a:hover,
+.nav-header li a:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+}
+
+.nav-header li:first-child {
+    width: 60px;
+    text-align: center;
+}
+
+.nav-header li:first-child a {
+    padding: 0;
+}
+
+.nav-header li:first-child a i {
+    display: block;
+    line-height: 60px;
+    font-size: 20px;
+}
+
+
+/*[00.logo-header]*/
+
+.logo-header {
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    font-size: 20px;
+    background-color: #295eb3;
+}
+
+.logo-header a {
+    display: block;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    color: #acc2e5;
+    padding: 0 30px;
+    font-family: 'roboto', sans-serif;
+    font-weight: 300;
+    letter-spacing: 5px;
+}
+
+.logo-header a:hover,
+.logo-header a:focus {
+    color: #acc2e5;
+    text-decoration: none;
+    outline: none;
+}
+
+
+/*[]*/
+
+.search-home {
+    width: 600px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 120px;
+    position: relative;
+}
+
+.search-home .search-input {
+    height: 60px;
+    width: 100%;
+    border: 2px solid #aaa;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;
+    border-radius: 60px;
+    background: none;
+    outline: none;
+    padding: 0 30px;
+    color: #000;
+    line-height: 60px;
+    font-size: 1.5rem;
+    color: #3066be;
+    transition: all ease 0.5s;
+}
+
+.search-home .search-btn {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 54px;
+    height: 54px;
+    border-radius: 60px;
+    border: none;
+    background: none;
+    color: #aaa;
+    overflow: hidden;
+    padding: 0;
+    outline: none;
+    transition: all ease 0.1s;
+}
+
+.search-home .search-btn:focus {
+    background-color: #3066be;
+    color: #fff;
+}
+
+.search-home .search-btn i {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 54px;
+    font-size: 18px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all ease 0.5s;
+}
+
+.search-home.active .search-input {
+    border-color: #3066be;
+}
+
+.search-home.active .search-btn {
+    color: #3066be;
+}
+
+.search-home.active .search-btn .fa-search,
+.search-home .search-btn .fa-spinner {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.search-home.active .search-btn .fa-spinner {
+    opacity: 1;
+    visibility: visible;
+    font-size: 22px;
+}
+
+
+
+/*[00.question-item]*/
+.question-item{
+    background-color:#fff;
+    padding:30px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+}
+.question-item h2 {
+    font-size:16px;
+    margin:0 0 15px;
+}
+.question-item h2 a{
+    text-decoration: none;
+}
+.question-item p {
+    line-height: 3rem;
+    text-align: justify;
+    color:#555;
+    margin:0;
+    font-size: 13px;
+}
+
+
+
+
+/*[footer]*/
+.footer {
+    background-color:#3d485a;
+    height: 55px;
+}
